@@ -1550,6 +1550,18 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.5.1.tgz#fde96064ca446dec8c55a8c2f130957b070c6e06"
   integrity sha512-yN7kbciD87WzLGc5539Tn0sApjyiGHAJgKvG9W8C7O+6c7qmoQMfVs0W4bX17eqz6C78QJqqFrtgdK5EWf6Qow==
 
+"@hapi/hoek@^9.0.0":
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.3.0.tgz#8368869dcb735be2e7f5cb7647de78e167a251fb"
+  integrity sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==
+
+"@hapi/topo@^5.0.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@hapi/topo/-/topo-5.1.0.tgz#dc448e332c6c6e37a4dc02fd84ba8d44b9afb012"
+  integrity sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+
 "@hapi/wreck@^15.0.2":
   version "15.1.0"
   resolved "https://registry.yarnpkg.com/@hapi/wreck/-/wreck-15.1.0.tgz#7917cd25950ce9b023f7fd2bea6e2ef72c71e59d"
@@ -2558,6 +2570,23 @@
   integrity sha512-MI4Xx6LHs4Webyvi6EbspgyAb4D2Q2VtnCQ1blOJcoLS6mVa8lNN2rkIy1CVxfTUpoyIbCTkXES1rLXztFD1lg==
   dependencies:
     any-observable "^0.3.0"
+
+"@sideway/address@^4.1.3":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.4.tgz#03dccebc6ea47fdc226f7d3d1ad512955d4783f0"
+  integrity sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw==
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+
+"@sideway/formula@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@sideway/formula/-/formula-3.0.0.tgz#fe158aee32e6bd5de85044be615bc08478a0a13c"
+  integrity sha512-vHe7wZ4NOXVfkoRb8T5otiENVlT7a3IAiw7H5M2+GO+9CDgcVUUsX1zalAztCmwyOr2RUTGJdgB+ZvSVqmdHmg==
+
+"@sideway/pinpoint@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
+  integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -3692,14 +3721,15 @@
   dependencies:
     "@types/node" "*"
 
-"@types/h2o2@^8.1.1":
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/@types/h2o2/-/h2o2-8.1.1.tgz#f990302cd2fdfd7909cff9d6643052002b69998f"
-  integrity sha512-lwF9WSvo4sfT0TnDZDXKef9Yza4xUXC3561QG4Q3Axhrkr+ZFBVJ7kCwI1mUNzk60jI1aMTYVIIoHKZjwCGuHw==
+"@types/h2o2@^8.1.3":
+  version "8.1.3"
+  resolved "https://registry.yarnpkg.com/@types/h2o2/-/h2o2-8.1.3.tgz#1af19bc768c314b5cf5e55d973c950a1b40462f8"
+  integrity sha512-+hLHk93Lc3R2GXo3LdGwcYt1ypjgH6mkLoe0mt+uClfD/00YaebGpF2JVsywo8XT9wSpELuouKgTTq7RvaAZhg==
   dependencies:
     "@types/boom" "*"
     "@types/hapi" "*"
     "@types/node" "*"
+    joi "^17.3.0"
 
 "@types/hapi-auth-cookie@^9.1.0":
   version "9.1.0"
@@ -12508,10 +12538,10 @@ gzip-size@5.1.1:
     duplexer "^0.1.1"
     pify "^4.0.1"
 
-h2o2@^8.1.2:
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/h2o2/-/h2o2-8.1.2.tgz#25e6f69f453175c9ca1e3618741c5ebe1b5000c1"
-  integrity sha1-Jeb2n0UxdcnKHjYYdBxevhtQAME=
+h2o2@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/h2o2/-/h2o2-8.2.0.tgz#ead6a855f40cf8fbe67986751b5e2ff8a87aa643"
+  integrity sha512-TwWWSk1tMg03VkSKQTrTSXWKogmpYts5Uj5W6GN9CedFJY5EtL5vz2nndd9s5qxxSMP6Wj8jyGrj/6qV9d4KDg==
   dependencies:
     boom "7.x.x"
     hoek "5.x.x"
@@ -15262,6 +15292,17 @@ joi@13.x.x, joi@^13.5.2:
     hoek "5.x.x"
     isemail "3.x.x"
     topo "3.x.x"
+
+joi@^17.3.0:
+  version "17.6.2"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.6.2.tgz#00ac55ce6495596545cce45309f38738cfbd7cd3"
+  integrity sha512-+gqqdh1xc1wb+Lor0J9toqgeReyDOCqOdG8QSdRcEvwrcRiFQZneUCGKjFjuyBWUb3uaFOgY56yMaZ5FIc+H4w==
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+    "@hapi/topo" "^5.0.0"
+    "@sideway/address" "^4.1.3"
+    "@sideway/formula" "^3.0.0"
+    "@sideway/pinpoint" "^2.0.0"
 
 jpeg-js@^0.4.0:
   version "0.4.1"
