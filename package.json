@@ -221,7 +221,7 @@
     "@babel/types": "^7.16.0",
     "@elastic/apm-rum": "^5.6.1",
     "@elastic/charts": "31.1.0",
-    "@elastic/ems-client": "7.10.0",
+    "@elastic/ems-client": "8.4.0",
     "@elastic/eslint-config-kibana": "0.15.0",
     "@elastic/eslint-plugin-eui": "0.0.2",
     "@elastic/filesaver": "1.1.2",
